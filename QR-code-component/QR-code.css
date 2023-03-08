@@ -1,0 +1,81 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+  --Background-brown: hsl(0, 4%, 91%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: var(--Background-brown);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-gray);
+  width: 85%;
+  height: 75%;
+  border-radius: 2px;
+  box-shadow: 0 6px 10px rgb(0 0 0 / 8%), 0 8px 12px rgb(0 0 0 / 5%);
+}
+.card {
+  height: 75%;
+  width: 26%;
+  background-color: var(--White);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 4px 6px rgb(0 0 0 / 10%), 1px 2px rgb(0 0 0 / 8%);
+}
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+figure {
+  height: 60%;
+}
+figure > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: fill;
+}
+section {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  padding: 0 12px;
+}
+.title {
+  font-weight: 700;
+  font-size: larger;
+  color: var(--Dark-blue);
+}
+p {
+  margin-top: 10px;
+  font-size: small;
+  font-weight: 400;
+  color: var(--Grayish-blue);
+}
+.attribution {
+  font-size: small;
+  color: var(--Dark-blue);
+}
+.attribution > a {
+  text-decoration: none;
+}
+
+.attribution > #name {
+  font-family: "Rubik Vinyl", cursive;
+}
