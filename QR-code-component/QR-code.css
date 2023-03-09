@@ -18,6 +18,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 .container {
   display: flex;
@@ -67,6 +68,64 @@ p {
   font-size: small;
   font-weight: 400;
   color: var(--Grayish-blue);
+}
+
+.toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: var(--Background-brown);
+  box-shadow: 2px 3px 6px 4px rgb(0 0 0 / 5%);
+}
+label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+  background-color: transparent;
+}
+.slider:before {
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--Dark-blue);
+}
+
+/* input:focus + .slider {
+  box-shadow: 0 0 1px var(--Grayish-blue);
+} */
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
 }
 
 .attribution {

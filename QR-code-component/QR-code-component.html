@@ -12,11 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Rubik+Vinyl&display=swap"
       rel="stylesheet"
     />
-
+    <script src="Toggle.js"></script>
     <title>QR-code</title>
   </head>
   <body>
     <main>
+      <div class="toggle">
+        <label for="checkbox" class="label">
+          <input type="checkbox" name="toggle" id="checkbox" />
+          <span class="slider" onclick="toggle()">
+            <span>on</span>
+            <span>off</span>
+          </span>
+        </label>
+      </div>
       <div class="container">
         <div class="card">
           <div class="wrapper">
@@ -34,12 +43,6 @@
             </section>
           </div>
         </div>
-      </div>
-      <div class="toggle">
-        <input type="checkbox" name="toggle" id="checkbox" />
-        <label for="checkbox" class="label">
-          <span>preview full-screen</span>
-        </label>
       </div>
       <div class="attribution">
         Challenge by
