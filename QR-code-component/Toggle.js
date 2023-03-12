@@ -1,14 +1,25 @@
-let container = document.getElementsByClassName("container");
-let card = document.getElementsByClassName("card");
+// let container = document.getElementsByClassName("container");
+// let card = document.getElementsByClassName("card");
 
-let slider = document.getElementsByClassName("slider");
-slider.addEventListener("click", function (event) {
-  let main = document.getElementsByTagName("main");
+// let slider = document.getElementsByClassName("slider");
+// slider.addEventListener("click", function (event) {
+//   let main = document.getElementsByTagName("main");
 
-  main.style.backgroundColor = "coral";
+//   main.style.backgroundColor = "coral";
+
+//   // 👇️ optionally change text color
+//   // box.style.color = 'white';
+// });
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", function onClick(event) {
+  const box = document.getElementById("box");
+
+  box.style.backgroundColor = "coral";
 
   // 👇️ optionally change text color
-  // box.style.color = 'white';
+  box.style.color = "white";
 });
 
 // let checkbox = document.getElementById("checkbox");
