@@ -11,16 +11,14 @@
 //   // box.style.color = 'white';
 // });
 
-const btn = document.getElementById("btn");
+const clicked = () => {
+  console.log("clicked");
+  const btn = document.getElementById("btn");
+  btn.style.backgroundColor = "coral";
+};
 
-btn.addEventListener("click", function onClick(event) {
-  const box = document.getElementById("box");
-
-  box.style.backgroundColor = "coral";
-
-  // 👇️ optionally change text color
-  box.style.color = "white";
-});
+// 👇️ optionally change text color
+// box.style.color = "white";
 
 // let checkbox = document.getElementById("checkbox");
 // const toggle = (e) => {
